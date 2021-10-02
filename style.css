@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+body{
+ overscroll-behavior-y: contain;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header/navbar */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+div.logo {
+    font-size: 1.8rem;
+    
+}
+
+div.logo strong {
+    font-size: 2rem;
+}
+
+div.nav-links {
+    margin: auto 0;
+}
+
+i.fa-angle-down {
+    color: #eee;
+}
+
+i.fa-angle-up {
+    display: none;
+}
+
+div.nav-links ul.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul.main-menu > li {
+    margin: 0 1.3rem;
+}
+
+ul.main-menu a,
+li.contact-sales {
+    color: #000;
+    font-size: 1.1rem;
+}
+
+button.navbar-button {
+    
+    background-color: #00bab3;
+    border-radius: 5px;
+    
+    padding: 0.8rem 0.5rem;
+    border: 0;
+    outline: none;
+}
+
+button.navbar-button:hover {
+    background-color: #059c97ad;
+}
+
+button.navbar-button a {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ****sub-menus**** */
+li.contact-sales {
+    position: relative;
+}
+
+li.contact-sales a:hover {
+    color: #147bd1;
+}
+
+li.contact-sales a:hover .fa-angle-down {
+    display: none;
+}
+li.contact-sales a:hover .fa-angle-up {
+    display: inline-block;
+    color: #147bd1;
+}
+
+li.contact-sales:hover div.contact-sales-sub-menu {
+    display: block;
+}
+
+ul.contact-sales-sub-menu {
+    position: absolute;
+    /* display: none; */
+    width: 20rem;
+    background-color: #fff;
+    top: 4rem;
+    left: -6.5rem;
+    
+    padding: 0rem 0rem;
+}
+
+ul.contact-sales-sub-menu > li {
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+}
+
+ul.contact-sales-sub-menu > a {
+    padding-left: 1rem;
+}
+
+ul.contact-sales-sub-menu li:last-of-type {
+    background-color: rgb(224, 224, 224);
+    padding: 1rem 0;
+}
+
+div.underline {
+    width: 100%;
+    height: 0.04rem;
+    background: #eee;
+    
+}
+
+div.all-contacts {
+    background: rgba(238, 238, 238, 0.842);
+    padding: 1rem 0;
+}
+
+div.all-contacts a {
+    font-weight: bold;
+}
+
+div.all-contacts a:hover {
+    color: #147bd1;
+}
