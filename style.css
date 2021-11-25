@@ -20,6 +20,7 @@ html {
 body{
  overscroll-behavior-y: contain;
  font-family: Arial, Helvetica, sans-serif;
+ overflow-x: hidden;
 }
 
 /* header/navbar */
@@ -89,6 +90,7 @@ button.navbar-button a {
 }
 
 /* ****sub-menus**** */
+/* contact sales submenu ================================*/
 li.contact-sales {
     position: relative;
 }
@@ -97,21 +99,21 @@ li.contact-sales a:hover {
     color: #147bd1;
 }
 
-li.contact-sales a:hover .fa-angle-down {
-    display: none;
-}
-li.contact-sales a:hover .fa-angle-up {
-    display: inline-block;
+li.contact-sales:hover .fa-angle-down {
+    
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
     color: #147bd1;
 }
 
-li.contact-sales:hover div.contact-sales-sub-menu {
+li.contact-sales:hover ul.contact-sales-sub-menu {
     display: block;
+    transition: 1s ease-in-out;
 }
 
 ul.contact-sales-sub-menu {
     position: absolute;
-    /* display: none; */
+    display: none;
     width: 20rem;
     background-color: #fff;
     top: 4rem;
@@ -152,4 +154,220 @@ div.all-contacts a {
 
 div.all-contacts a:hover {
     color: #147bd1;
+}
+
+/* company submenu============================ */
+li.company {
+    position: relative;
+}
+
+/* submenu logic */
+li.company a:hover {
+    color: #147bd1;
+}
+
+li.company:hover .fa-angle-down {
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
+    color: #147bd1;
+}
+
+li.company:hover div.company-sub-menu {
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+div.company-sub-menu li a:hover {
+    color: #147bd1;
+}
+
+/* end of submenu logic */
+
+div.company-sub-menu {
+    position: absolute;
+    display: none;
+    top: 4rem;
+    right: -35rem;
+    width: 90rem;
+    background-color: #fff;
+    
+}
+
+div.company-sub-menu > h2 {
+    margin-top: 3rem;
+    
+    margin-left: 1rem;
+}
+
+div.company-sub-menu div.underline {
+    margin: 1rem 0;
+}
+
+div.about-menu-container {
+    display: flex;
+    margin-left: 1rem;
+}
+
+
+ul.about-left-menu {
+    margin-right: 5rem;
+}
+
+ul.about-left-menu li {
+    margin: 1.5rem 0;
+}
+
+ul.about-right-menu {
+    margin-left: 5rem;
+}
+
+ul.about-right-menu li {
+    margin: 1.5rem 0;
+}
+
+div.about-footer {
+    display: flex;
+    padding: 1.5rem 0;
+    
+    background-color: #eee;
+}
+
+div.about-footer > p {
+    margin-left: 1rem;
+}
+
+div.about-footer p {
+    margin-right: 3rem;
+    color: #666;
+    font-weight: bold;
+}
+
+/* partners submenu ==========================*/
+li.partners {
+    position: relative;
+}
+
+/* submenu logic */
+li.partners a:hover {
+    color: #147bd1;
+}
+
+li.partners:hover .fa-angle-down {
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
+    color: #147bd1;
+}
+
+
+li.partners:hover div.partners-sub-menu {
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+div.partners-sub-menu li a:hover {
+    color: #147bd1;
+}
+
+/* end of submenu logic */
+
+div.partners-sub-menu {
+    position: absolute;
+    
+    display: none;
+    top: 4rem;
+    left: -36rem;
+    width: 90rem;
+    background-color: #fff;
+    
+}
+
+div.partners-sub-menu > h2 {
+    margin-top: 3rem;
+    
+    margin-left: 1rem;
+}
+
+div.partners-sub-menu div.underline {
+    margin: 1rem 0;
+}
+
+/* resources menu======================= */
+li.resources {
+    position: relative;
+}
+
+/* submenu logic */
+li.resources a:hover {
+    color: #147bd1;
+}
+
+li.resources:hover .fa-angle-down {
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
+    color: #147bd1;
+}
+
+
+li.resources:hover div.resources-sub-menu {
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+div.resources-sub-menu li a:hover {
+    color: #147bd1;
+}
+
+/* end of submenu logic */
+
+div.resources-sub-menu {
+    position: absolute;
+    
+    display: none;
+    top: 4rem;
+    left: -27rem;
+    width: 90rem;
+    background-color: #fff;
+    
+}
+
+div.resources-sub-menu h2 {
+    margin-top: 3rem;
+}
+
+div.resources-sub-menu div.underline {
+    margin: 1rem 0;
+}
+
+ul.learn-menu .underline,
+ul.customer-success-menu .underline,
+div.featured-topics .underline {
+    width: 100%;
+}
+
+ul.learn-menu {
+    margin-right: 9rem;
+}
+
+ul.learn-menu li {
+    margin: 1.5rem 0;
+}
+
+ul.customer-success-menu {
+    margin-right: 9rem;
+}
+
+ul.customer-success-menu li {
+    margin: 1.5rem 0;
+}
+
+div.featured-topics-menu {
+    display: flex;
+}
+
+div.featured-topics-menu ul:first-of-type {
+    margin-right: 9rem;
+}
+
+div.featured-topics-menu ul li {
+    margin: 1.5rem 0;
 }
