@@ -97,6 +97,7 @@ li.contact-sales {
 
 li.contact-sales a:hover {
     color: #147bd1;
+    padding-bottom: 4rem;
 }
 
 li.contact-sales:hover .fa-angle-down {
@@ -164,6 +165,7 @@ li.company {
 /* submenu logic */
 li.company a:hover {
     color: #147bd1;
+    padding-bottom: 4rem;
 }
 
 li.company:hover .fa-angle-down {
@@ -250,6 +252,7 @@ li.partners {
 /* submenu logic */
 li.partners a:hover {
     color: #147bd1;
+    padding-bottom: 4rem;
 }
 
 li.partners:hover .fa-angle-down {
@@ -299,6 +302,7 @@ li.resources {
 /* submenu logic */
 li.resources a:hover {
     color: #147bd1;
+    padding-bottom: 4rem;
 }
 
 li.resources:hover .fa-angle-down {
@@ -368,6 +372,132 @@ div.featured-topics-menu ul:first-of-type {
     margin-right: 9rem;
 }
 
-div.featured-topics-menu ul li {
+div.featured-topics-menu li {
     margin: 1.5rem 0;
 }
+
+/* solutions submenu================== */
+li.solutions {
+    position: relative;
+}
+
+/* submenu logic */
+li.solutions a:hover {
+    color: #147bd1;
+    padding-bottom: 4rem;
+}
+
+li.solutions:hover .fa-angle-down {
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
+    color: #147bd1;
+}
+
+
+li.solutions:hover div.solutions-sub-menu {
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+div.solutions-sub-menu li a:hover {
+    color: #147bd1;
+}
+
+/* end of submenu logic */
+div.solutions-sub-menu {
+    position: absolute;
+    
+    display: none;
+    top: 4rem;
+    left: -19rem;
+    width: 90rem;
+    background-color: #fff;
+    
+}
+
+div.by-use-menu h2 {
+    margin-top: 3rem;
+}
+
+div.by-role-menu {
+    margin-left: 6rem;
+}
+
+div.by-role-menu h2 {
+    margin-top: 3rem;
+}
+
+div.by-use-menu div.underline,
+div.by-role-menu div.underline {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+div.by-use-menu-left {
+    margin-right: 6rem;
+}
+
+/* product submenu==================== */
+li.product {
+    position: relative;
+}
+
+/* submenu logic */
+li.product a:hover {
+    color: #147bd1;
+    padding-bottom: 4rem;
+}
+
+li.product:hover .fa-angle-down {
+    transform: rotate(-180deg);
+    transition: 0.5s ease;
+    color: #147bd1;
+}
+
+
+li.product:hover div.product-sub-menu {
+    display: block;
+    transition: 1s ease-in-out;
+}
+
+div.product-sub-menu li a:hover {
+    color: #147bd1;
+}
+
+/* end of submenu logic */
+
+div.product-sub-menu {
+    position: absolute;
+    
+    display: none;
+    top: 4rem;
+    left: -12rem;
+    width: 90rem;
+    background-color: #fff;
+}
+
+div.product-sub-menu h2 {
+    margin-top: 3rem;
+}
+
+div.product-sub-menu div.underline {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+ul.overview-menu {
+    margin-right: 9rem;
+}
+
+ul.overview-menu li {
+    margin: 1.5rem 0;
+}
+
+ul.where-to-start-menu {
+    margin-left: 9rem;
+}
+
+ul.where-to-start-menu li {
+    margin: 1.5rem 0;
+}
+
